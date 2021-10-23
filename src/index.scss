@@ -1,0 +1,24 @@
+.iframe-sample-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .iframe-message {
+    width: 100%;
+  }
+
+  .button-container {
+    button:nth-child(n + 2) {
+      margin-left: 8px;
+    }
+  }
+
+  .iframe-container {
+    margin: 32px 0;
+
+    .myself-iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
