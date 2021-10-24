@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
+      - name: create .env.production file
+        run: echo "${{ secrets.ENV_PROD }}" > .env.production
       - name: install
         run: npm install
       - name: build
