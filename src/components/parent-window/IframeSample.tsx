@@ -74,7 +74,7 @@ const IframeSample: React.FC = () => {
           title="myself-iframe"
           className="myself-iframe"
           ref={iframeRef}
-          src="http://localhost:3000"
+          src={import.meta.env.VITE_BASE_PATH as string}
         />
       </div>
     </div>
